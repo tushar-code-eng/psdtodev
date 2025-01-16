@@ -7,7 +7,7 @@ const HeroBlock = () => {
   const [number, setNumber] = useState(1);
 
   const calculateTimeLeft = () => {
-    const difference = +new Date("2025-01-16T12:00:00") - +new Date();
+    const difference = +new Date("2025-01-17T00:00:00") - +new Date();
     let timeLeft: { [key: string]: number } = {};
 
     if (difference > 0) {
@@ -49,17 +49,17 @@ const HeroBlock = () => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center gap-2">
-      <div className="text-lg text-center font-bold text-[#14336d]">
+      <div className="text-xl md:text-sm lg:text-base xl:text-xl text-center font-bold text-[#14336d]">
         OFFERTA LIMITATA SCADE TRA
-        <span className=" inline-block">
+        <span className=" inline-block ml-1">
           {timerComponents.length ? timerComponents : <span>Time's up!</span>}
         </span>
       </div>
-      <div className="text-xl text-center w-full font-bold text-white bg-[#00bd0e] py-1 px-3 ">
+      <div className="text-xl md:text-sm lg:text-base xl:text-xl text-center w-full font-extrabold text-[#00bd0e] py-1 xl:px-3 ">
         Richiedi un preventivo GRATUITO Compila il modulo ora
       </div>
       <div className="flex gap-1 items-center justify-center mt-2">
-        <div className="px-4 py-1 rounded-[50%] bg-[#00bd0e] text-white flex items-center justify-center text-4xl ">
+        <div className="px-4 py-1 rounded-[50%] bg-[#00bd0e] text-white flex items-center justify-center text-3xl md:text-2xl lg:text-3xl xl:text-4xl ">
           1
         </div>
         <div
@@ -73,7 +73,7 @@ const HeroBlock = () => {
           } `}
         ></div>
         <div
-          className={`px-4 py-1 rounded-[50%] border transform transition-all duration-500 delay-200 ease-in-out flex items-center justify-center text-4xl ${
+          className={`px-4 py-1 rounded-[50%] border transform transition-all duration-500 delay-200 ease-in-out flex items-center justify-center text-3xl md:text-2xl lg:text-3xl xl:text-4xl ${
             number >= 2
               ? "bg-[#00bd0e] text-white"
               : "border-[#bfbfbf] text-[#838383]"
@@ -92,7 +92,7 @@ const HeroBlock = () => {
           } `}
         ></div>
         <div
-          className={`px-4 py-1 rounded-[50%] border transform transition-all duration-500 delay-200 ease-in-out flex items-center justify-center text-4xl ${
+          className={`px-4 py-1 rounded-[50%] border transform transition-all duration-500 delay-200 ease-in-out flex items-center justify-center text-3xl md:text-2xl lg:text-3xl xl:text-4xl ${
             number == 3
               ? "bg-[#00bd0e] text-white"
               : "border-[#bfbfbf] text-[#838383]"
@@ -101,7 +101,7 @@ const HeroBlock = () => {
           3
         </div>
       </div>
-      <div className={`w-full ${number == 1 ? "block" : "hidden"}`}>
+      <div className={`w-full ${number == 1 ? "block" : "hidden"} xl:my-3`}>
         <HeroBlockSub1 number={number} setNumber={setNumber} />
       </div>
       <div className={` xl:w-3/4 ${number == 2 ? "block" : "hidden"}`}>

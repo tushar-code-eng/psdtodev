@@ -1,36 +1,20 @@
 import "./App.css";
 
-import Navbar from "./components/Navbar";
-import Hero1 from "./components/Hero1";
-import Hero2 from "./components/Hero2";
-import Body1 from "./components/Body1";
-import BodyContainer from "./components/BodyContainer";
-import Body2 from "./components/Body2";
-import Footer from "./components/Footer";
-import HeroBlock from "./components/HeroBlock";
-import Body1Mobile from "./components/Body1Mobile";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Project1 from "./pages/Project1";
+import Project2 from "./pages/Project2";
+import Home from './pages/Home'
+
 
 function App() {
   return (
-    <>
-      <div id="main-conatiner" className="w-full">
-        <Navbar />
-        <Hero1 />
-        <div className="xl:hidden w-full my-10">
-          <HeroBlock />
-        </div>
-        <Hero2 />
-        <div className="hidden lg:block">
-          <Body1 />
-        </div>
-        <div className="lg:hidden">
-          <Body1Mobile />
-        </div>
-        <BodyContainer />
-        <Body2 />
-        <Footer />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={ <Home /> } />
+        <Route path="/project1" element={<Project1 />} />
+        <Route path="/project2" element={<Project2 />} />
+      </Routes>
+    </Router>
   );
 }
 

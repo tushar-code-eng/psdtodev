@@ -3,7 +3,7 @@ import PlusMinusBox from "./subComponents/PlusMinusBox";
 const BodyContainer = () => {
   return (
     <div className="flex items-center justify-center my-14">
-      <div className="lg:border-[6px] border-y-[6px] border-gray-300 lg:rounded-2xl lg:w-[80vw] xl:w-[60vw] p-4">
+      <div className="lg:border-[6px] border-y-[6px] bg-[#ededed] border-gray-300 lg:rounded-2xl lg:w-[80vw] xl:w-[60vw] p-4">
         <div className="flex flex-col items-center justify-center">
           <span className=" text-3xl md:text-4xl font-extrabold text-center text-[#00bd0e]">
             CESSIONE DEL QUINTO
