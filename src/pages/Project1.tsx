@@ -13,16 +13,14 @@ const Project1 = () => {
     backgroundPosition: "center",
   };
 
-  const secondcontainerstyle2 = {
-    backgroundImage: "none",
-  };
+  // const secondcontainerstyle2 = {
+  //   backgroundImage: "none",
+  // };
 
   return (
-    <div style={window.innerWidth < 768 ? maincontainerstyle : secondcontainerstyle2 } className="main-container">
+    <div style={window.innerWidth > 768 ? maincontainerstyle : secondcontainerstyle} className="main-container">
       <div
-        style={
-          window.innerWidth > 768 ? secondcontainerstyle : secondcontainerstyle2
-        }
+        
         className="second-container w-full md:h-screen cover object-contain overflow-hidden flex gap-6 md:flex-row flex-col items-center justify-center"
       >
         <img
