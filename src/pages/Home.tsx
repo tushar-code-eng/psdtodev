@@ -1,18 +1,3 @@
-// const Home = () => {
-//   return (
-//     <div className="">
-//       <div className="text-center mt-10">
-//         <span className="text-5xl">Web Page Development.</span>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Home;
-
-// import { cn } from "../lib/utils";
-// import React from "react";
-// import { img } from "framer-motion/client";
 import img1 from '/outer/img1.png'
 import img2 from '/outer/img2.png'
 

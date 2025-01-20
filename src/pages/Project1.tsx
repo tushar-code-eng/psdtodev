@@ -1,6 +1,19 @@
 import './Project1.css'
 
 const Project1 = () => {
+
+  // const maincontainerstyle = {
+  //   backgroundImage: "url('images1/back-img.png')",
+  //   backgroundSize: "cover",
+  //   backgroundPosition: "center"
+  // } 
+
+  // const secondcontainerstyle = {
+  //   backgroundImage: "url('images1/back-img2.png')",
+  //   backgroundSize: "cover",
+  //   backgroundPosition: "center"
+  // } 
+
   return (
     <div className="main-container">
       <div className="second-container w-full md:h-screen cover object-contain overflow-hidden flex gap-6 md:flex-row flex-col items-center justify-center">
